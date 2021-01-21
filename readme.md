@@ -13,7 +13,7 @@ About Generated sqlite3 database:
 Database name is site.db
 
 About Flask application:
-Creates a view to show the info of all the users of the database in a table. Profile avatar is visible and clicking the username sends you to the GitHub profile.Pagination implemented using Flask-SQLAlchemy, default size is to 25. The page is responsive even with a large amount of data 
+Creates a view to show the info of all the users of the database in a table. Profile avatar is visible and clicking the username sends you to the GitHub profile.Pagination implemented using Flask-SQLAlchemy, default size is set to 25. The page is responsive even with a large amount of data 
 
 To run the Flask application:
 python app.py
