@@ -1,4 +1,4 @@
-About Seed.py script and Flask Web App
+About seed.py script and Flask Web App
 ----------------------------------------
 Script: seed.py
 Description:
