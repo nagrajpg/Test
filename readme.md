@@ -1,5 +1,5 @@
-About seed.py script and Flask Web App
-----------------------------------------
+About seed.py script, Flask Web App and RESTful API 
+-----------------------------------------------------
 Script: seed.py
 Description:
 This script populates a SQLite3 database. By default it retrieves the first 150 users from GitHub.
@@ -28,13 +28,14 @@ Improvements since previous version:
 - Added logging to console and file
 - Replaced individual SQL inserts with Bulk insert (sqlite3 executemany)
 
--Added REST Service (uses flask_restful) to retrieve data from database using REST API
+- Added REST Service (uses flask_restful) to retrieve data from database using REST API: 
+    - To run the rest service  run on terminal:  python flaskrest.py
+    - Note : service runs on localhost, port:5001 
 
 -Added caching
 
 API:
-
-GET 	 /Profiles
+-GET 	 /Profiles
 
 Parameters:
 
