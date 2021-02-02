@@ -27,3 +27,22 @@ Improvements since previous version:
 - Added improved error handling 
 - Added logging to console and file
 - Replaced individual SQL inserts with Bulk insert (sqlite3 executemany)
+
+-Added REST API to retrieve data from database
+API:
+GET 	 /Profiles
+
+Parameters:
+Name	                        Type	                           Description
+id	                            integer	                           returns user information with matching id
+loginid	                        string	                           returns user information with matching username/loginid
+usertype	                    string	                           Valid User Type values (User or Organization), returns all users of the type 
+pagination	                    integer	                           number of records per page for pagination
+pagenumber              	    integer            	               page number for which data needs to be retrived
+orderby                 	    string             	               orders records as per orderby (valid values: 'id' 
+                                                                                                  or 'names'or 'loginids' or 'profiles'
+                                                                                                  default is orderby ‘id’)
+
+
+
+-Added caching
